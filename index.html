@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/075634a10b.js" crossorigin="anonymous"></script>
+    <title>AI-Universe-Hub</title>
+</head>
+
+<body onload="loadAllData()">
+    <!-- Header Start -->
+    <header class="text-center fw-bolder">
+        <h1 class="mb-5">AI Universe Hub</h1>
+        <button id="sort-btn"  class="btn btn-danger py-2 px-3">Sort By Date</button>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Section Start -->
+    <main>
+        <!-- Cards Section Start -->
+        <section>
+            <div class="container mt-5">
+                <div id="tools-container" class="row row-cols-1 row-cols-md-3 g-2">
+                    
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button onclick="allToolsDataLoad()" id="btn-seeMore" class="btn btn-danger mb-5">See More</button>
+            </div>
+        </section>
+
+        <!-- Modal Section Start -->
+        <div class="modal fade" id="AIDetailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="AIDetailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-xl">
+                <div class="modal-content">
+                    <div class="d-md-flex justify-content-md-end">
+                        <button type="button" class="btn-close bg-danger rounded-circle p-3 m-1" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div id="modal-body" class="modal-body">
+                        <!-- Modal Body -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal End -->
+        <!-- Card Section End -->
+
+        <!-- Spinner container start -->
+        <div class="d-none position-absolute start-50 translate-middle" id="spinner-container">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+
+        <section id="sort-container">
+
+        </section>
+
+    </main>
+    <!-- Main Section End -->
+
+
+    <!-- Vanilla JS Script Link -->
+    <script src="./JS/javaScript.js"></script>
+    <!-- Bootstrap JS Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
